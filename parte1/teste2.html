@@ -8,22 +8,55 @@
 <body>
     <script>
 
+console.log('Seja Bem vindo!');
+
+let nome = prompt('Qual seu nome?');
+let ling = prompt('Qual linguagem de programação você mais gosta?');
+let valor1 = Number(prompt('digite um numero:'));
+let valor2 = Number(prompt('digite um numero:'));
+let resultado = valor1 + valor2;
+let resultado2 = valor1 - valor2;
+let idade = prompt('Qual a sua idade?');
+let numero = Number(prompt('Digite um numero:'))
+let cont = 1;
+let nota = Number(prompt('Digite sua nota de 0 a 10:'));
+let nr = Number(parseInt(Math.random() * 1000 + 1));
 
 
+console.log(`Olá ${nome}`);
+alert(`Olá ${nome}`);
+console.log(`muito bem então você gosta de ${ling}`);
+console.log(`a soma entre ${valor1} e ${valor2} é igual a ${resultado}`);
+console.log(`a diferença entre ${valor1} e ${valor2} é igual a ${resultado2}`);
 
-let cont = prompt('Diga um numero para fazermos uma contagem progressiva:');
-let inicio = 0;
+if (idade >= 18) {
+    console.log(`você tem ${idade} anos de idade, é maior de idade.`);
+} else {
+    console.log (`você tem ${idade} anos de idade, é menor de idade.`);
+}
 
-while (inicio != cont ) {
-    console.log(cont);
-    cont++;
-};
-
-
-
-
+if (numero == 0){
+    console.log(`o numero ${numero} é um numero neutro`);
     
+} else if (numero < 0) {
+    console.log(`o numero ${numero} é um numero negativo`);
+} else {
+    console.log(`o numero ${numero} é um numero positivo`);
+}
 
+while (cont != 11) {
+console.log(cont)
+cont++
+}
+
+if (nota >= 7){
+    console.log(`sua nota é ${nota} você foi aprovado`)
+} else {
+    console.log (`sua nota é ${nota} voce foi reprovado`)
+}
+
+console.log(nr);
+    
 
 
     </script>
